@@ -1,0 +1,14 @@
+# Versions below are the ones this pipeline was actually built and tested
+# against. Floors are set to the real minimum, not aspirational numbers.
+
+anthropic>=0.40.0          # tested on 0.120.2; needs output_config (structured outputs)
+python-docx>=1.1.0         # tested on 1.2.0  (pulls in lxml)
+latex2mathml>=3.77.0       # tested on 3.81.0
+sympy>=1.12                # tested on 1.14.0
+Pillow>=10.0.0             # tested on 12.1.1
+
+# NOTE: 0.0.2 is the newest release that exists. There is no 0.1.x.
+# omml.py patches two bugs in it (an unclosed <m:groupChrPr> and an <m:rad>
+# missing its required children). Both patches are written to no-op if a future
+# release fixes them, so they are safe to leave in place.
+mathml2omml>=0.0.2

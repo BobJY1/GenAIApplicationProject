@@ -1,0 +1,34 @@
+# Pipeline output. Regenerable, sometimes large, and 02_solved/03_mcq cost real
+# money to produce -- keep them locally, out of the repository.
+output/
+
+# Your own whiteboard frames. A real library is thousands of images and does not
+# belong in git. Three frames live in demo_data/ so the demo runs on a fresh
+# clone; nothing else here is published.
+input/*
+!input/.gitkeep
+
+# Review artifacts that may contain your own notes
+decisions.json
+released.json
+*.db
+
+# Local environment
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated documents
+*.docx
+!examples/*.docx
+*.pdf
