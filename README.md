@@ -80,4 +80,3 @@ are in **[USAGE.md](USAGE.md)**.
 | `prompts.py` `schemas.py` | what the model is asked, and the shape it must answer in |
 | `docx_builder.py` `omml.py` | Word output, LaTeX converted to native equations |
 
-MIT licensed. Built for [Math POT](https://www.youtube.com/@mathpot).
